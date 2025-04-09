@@ -19,7 +19,7 @@ public interface Terminable {
      * @return {@code true} if terminated within timeout.
      */
     boolean awaitTermination(Duration timeout)
-      throws InterruptedException;
+            throws InterruptedException;
 
     default String name() {
         return getClass().getSimpleName();

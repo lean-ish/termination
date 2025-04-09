@@ -27,10 +27,10 @@ test {
 
 spotless {
     java {
-        licenseHeaderFile 'LICENSE_HEADER', '\\s*(package|(@\\w+\\s)|import|public|class|interface|enum)'
         trimTrailingWhitespace()
         endWithNewline()
         removeUnusedImports()
         formatAnnotations()
+        licenseHeaderFile 'LICENSE_HEADER'
     }
 }
